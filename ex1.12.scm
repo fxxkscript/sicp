@@ -1,0 +1,5 @@
+(define (pascal-triangle n i)
+  (cond ((= i 1) 1)
+        ((= i n) 1)
+        (else (+ (pascal-triangle (- n 1) i)
+                 (pascal-triangle (- n 1) (- i 1)))))) 
